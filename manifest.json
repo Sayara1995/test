@@ -1,0 +1,330 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.sap.build.standard.hauliersCoPtyLtd",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.2.2"
+		},
+		"dataSources": {},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.3.0",
+		"rootView": {
+			"viewName": "generated.app.view.Popup",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.50.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.sap.build.standard.hauliersCoPtyLtd.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"SignIn"
+					]
+				}
+			},
+			"targets": {
+				"SignIn": {
+					"controlAggregation": "pages",
+					"viewName": "SignIn",
+					"viewId": "SignIn",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Signup": {
+					"controlAggregation": "pages",
+					"viewName": "Signup",
+					"viewId": "Signup",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"TermsAndConditions": {
+					"controlAggregation": "pages",
+					"viewName": "TermsAndConditions",
+					"viewId": "TermsAndConditions",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"ResetPassword": {
+					"controlAggregation": "pages",
+					"viewName": "ResetPassword",
+					"viewId": "ResetPassword",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"VerificationPassword": {
+					"controlAggregation": "pages",
+					"viewName": "VerificationPassword",
+					"viewId": "VerificationPassword",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"NewPassword": {
+					"controlAggregation": "pages",
+					"viewName": "NewPassword",
+					"viewId": "NewPassword",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"TrustedPartners": {
+					"controlAggregation": "pages",
+					"viewName": "TrustedPartners",
+					"viewId": "TrustedPartners",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"SelectionPage": {
+					"controlAggregation": "pages",
+					"viewName": "SelectionPage",
+					"viewId": "SelectionPage",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Bulldozer": {
+					"controlAggregation": "pages",
+					"viewName": "Bulldozer",
+					"viewId": "Bulldozer",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Dumptruck": {
+					"controlAggregation": "pages",
+					"viewName": "Dumptruck",
+					"viewId": "Dumptruck",
+					"viewLevel": 1,
+					"transition": "fade"
+				},
+				"Wheelloader": {
+					"controlAggregation": "pages",
+					"viewName": "Wheelloader",
+					"viewId": "Wheelloader",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Backhoe": {
+					"controlAggregation": "pages",
+					"viewName": "Backhoe",
+					"viewId": "Backhoe",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Crane": {
+					"controlAggregation": "pages",
+					"viewName": "Crane",
+					"viewId": "Crane",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"DateAndTime": {
+					"controlAggregation": "pages",
+					"viewName": "DateAndTime",
+					"viewId": "DateAndTime",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Payment": {
+					"controlAggregation": "pages",
+					"viewName": "Payment",
+					"viewId": "Payment",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"ThankYou": {
+					"controlAggregation": "pages",
+					"viewName": "ThankYou",
+					"viewId": "ThankYou",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Popup": {
+					"controlAggregation": "pages",
+					"viewName": "Popup",
+					"viewId": "Popup",
+					"viewLevel": 1,
+					"transition": "slide"
+				}
+			},
+			"routes": [
+				{
+					"pattern": "SignIn/:context:",
+					"name": "SignIn",
+					"target": [
+						"SignIn"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"SignIn"
+					]
+				},
+				{
+					"pattern": "Signup/:context:",
+					"name": "Signup",
+					"target": [
+						"Signup"
+					]
+				},
+				{
+					"pattern": "TermsAndConditions/:context:",
+					"name": "TermsAndConditions",
+					"target": [
+						"TermsAndConditions"
+					]
+				},
+				{
+					"pattern": "ResetPassword/:context:",
+					"name": "ResetPassword",
+					"target": [
+						"ResetPassword"
+					]
+				},
+				{
+					"pattern": "VerificationPassword/:context:",
+					"name": "VerificationPassword",
+					"target": [
+						"VerificationPassword"
+					]
+				},
+				{
+					"pattern": "NewPassword/:context:",
+					"name": "NewPassword",
+					"target": [
+						"NewPassword"
+					]
+				},
+				{
+					"pattern": "TrustedPartners/:context:",
+					"name": "TrustedPartners",
+					"target": [
+						"TrustedPartners"
+					]
+				},
+				{
+					"pattern": "SelectionPage/:context:",
+					"name": "SelectionPage",
+					"target": [
+						"SelectionPage"
+					]
+				},
+				{
+					"pattern": "Bulldozer/:context:",
+					"name": "Bulldozer",
+					"target": [
+						"Bulldozer"
+					]
+				},
+				{
+					"pattern": "Dumptruck/:context:",
+					"name": "Dumptruck",
+					"target": [
+						"Dumptruck"
+					]
+				},
+				{
+					"pattern": "Wheelloader/:context:",
+					"name": "Wheelloader",
+					"target": [
+						"Wheelloader"
+					]
+				},
+				{
+					"pattern": "Backhoe/:context:",
+					"name": "Backhoe",
+					"target": [
+						"Backhoe"
+					]
+				},
+				{
+					"pattern": "Crane/:context:",
+					"name": "Crane",
+					"target": [
+						"Crane"
+					]
+				},
+				{
+					"pattern": "DateAndTime/:context:",
+					"name": "DateAndTime",
+					"target": [
+						"DateAndTime"
+					]
+				},
+				{
+					"pattern": "Payment/:context:",
+					"name": "Payment",
+					"target": [
+						"Payment"
+					]
+				},
+				{
+					"pattern": "ThankYou/:context:",
+					"name": "ThankYou",
+					"target": [
+						"ThankYou"
+					]
+				},
+				{
+					"pattern": "Popup/:context:",
+					"name": "Popup",
+					"target": [
+						"Popup"
+					]
+				}
+			]
+		}
+	}
+}
